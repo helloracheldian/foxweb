@@ -1,0 +1,180 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+/* Horizontally centering Lists
+-------------------------------------------------- */
+
+
+/* Typography - Sizes
+-------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+  padding-bottom: 25px;
+  .text-center;
+  small {
+    font-weight: 300;
+    &:before {
+      content: '&nbsp;'; 
+      font-size:0; 
+      display:block;
+      line-height:0;
+    }
+  }
+}
+
+h1 {
+  span {
+    &:before {
+      content:url('../../../../images/logos/before.png');
+      padding-right: 8px;
+    }
+    &:after {
+      content: url('../../../../images/logos/after.png');
+      padding-left: 8px;
+    }
+  }
+}
+
+.navbar-nav > li > a {
+  font-size: 19px!important;
+}
+
+h1 {font-size: 36px;  text-transform: uppercase;}
+h2 {text-transform: uppercase;}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+/* Fox styles
+-------------------------------------------------- */
+
+section {
+  margin-bottom: 80px;
+}
+
+#home img {
+  .img-responsive;
+  .center-block;
+}
+
+#about img {
+  .center-block; /* This is a Bootstrap utility class as a less mixin */
+  .img-responsive; /* This is a Bootstrap utility class as a less mixin */
+  width: 100%;
+}
+
+#products img {
+  .center-block; /* This is a Bootstrap utility class as a less mixin */
+  .img-responsive; /* This is a Bootstrap utility class as a less mixin */
+}
+#find-us img {
+  .center-block; /* This is a Bootstrap utility class as a less mixin */
+  .img-responsive; /* This is a Bootstrap utility class as a less mixin */
+}
+#footer {
+  .footer-social {
+    width: 136px;
+    float: left;
+  }
+  .copyright {
+    .pull-right;
+  }
+}
+
+/* FAQ ACCORDION 
+-------------------------------------------------- */
+label {
+  font-weight: 300;
+}
+
+
+#faq label{
+  position: relative;
+  z-index: 20;
+  display: block;
+  cursor: crosshair;
+  color: #000;
+  
+}
+#faq label:hover{
+  color: #98d2a9;
+  
+
+}
+#faq input:checked + label,
+#faq input:checked + label:hover{
+  background: #fff;
+  color: #000;
+  text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+  /*box-shadow: 
+    0px 0px 0px 1px rgba(155,155,155,0.3), 
+    0px 2px 2px rgba(0,0,0,0.1);*/
+}
+#faq label:hover:after,
+#faq input:checked + label:hover:after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+  background: transparent url(../images/arrow_down.png) no-repeat center center;  
+}
+#faq input:checked + label:hover:after{
+  background-image: url(../images/arrow_up.png);
+}
+#faq input{
+  display: none;
+}
+#faq article{
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+#faq article p{
+  color: #777;
+  text-align: left;
+  padding: 20px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+#faq input:checked ~ article{
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+#faq input:checked ~ article.tab{
+  height: 100%;
+}
+
+#faq h3 {
+  text-align: left;
+  color: #98d2a9;
+
+}
+
+
+
+
+
+
+

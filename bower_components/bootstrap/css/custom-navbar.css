@@ -1,0 +1,13 @@
+body {
+  margin-top: 225px;
+  /* adjust this if the height of the menu bar changes */
+}
+.navbar-fixed-top .nav {
+  padding: 15px 0;
+}
+.navbar-fixed-top .navbar-brand {
+  padding: 0 15px;
+}
+.navbar-fixed-top .navbar-brand img {
+  height: 107px;
+}

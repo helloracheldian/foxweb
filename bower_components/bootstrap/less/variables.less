@@ -15,7 +15,7 @@
 @white:#fff;
 @black:#000;
 
-@brand-primary:         #88CA98;
+@brand-primary:         #98d2a9;
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -47,7 +47,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -342,19 +342,19 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    125px;
-@navbar-margin-bottom:             @line-height-computed;
+@navbar-height:                    100px;
+@navbar-margin-bottom:             none;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          20px;
-@navbar-collapse-max-height:       340px;
+@navbar-collapse-max-height:       100%;
 
 @navbar-default-color:             #ffffff;
-@navbar-default-bg:                #ffffff;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-bg:                rgba(255, 255, 255, 0.800);
+@navbar-default-border:            lighten(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
+@navbar-default-link-color:                #333;
 @navbar-default-link-hover-color:          #fff;
 @navbar-default-link-hover-bg:             #88CA98;
 @navbar-default-link-active-color:         #000;
