@@ -4873,13 +4873,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/press\/ASR.jpg": {
+	"\/images\/press\/asr.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 35426,
-		"inputAbbreviatedPath": "\/images\/press\/ASR.jpg",
-		"outputAbbreviatedPath": "\/images\/press\/ASR.jpg",
+		"initialSize": 26341,
+		"inputAbbreviatedPath": "\/images\/press\/asr.jpg",
+		"outputAbbreviatedPath": "\/images\/press\/asr.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5233,7 +5233,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jay Holtslander",
+"lastSavedByUser": "Rachel Dian",
 "manualImportLinks": {
 	},
 "projectAttributes": {
