@@ -2697,6 +2697,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/codekit-icon.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7860,
+		"inputAbbreviatedPath": "\/codekit-icon.jpg",
+		"outputAbbreviatedPath": "\/codekit-icon.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/contact.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5300,7 +5311,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Fox & Fancy",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_darkGray"
+	"iconImageName": "\/codekit-icon.jpg"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
