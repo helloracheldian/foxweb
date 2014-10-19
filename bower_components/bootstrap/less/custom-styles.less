@@ -180,8 +180,79 @@ label {
   color: #98d2a9;
 }
 
+/* PRODUCT PAGE 
+-------------------------------------------------- */
 
+#product {
+ 
+  #nav-row {
+    margin-bottom: 10px;
+    a {
+      &:hover {text-decoration: none;}
+    }
+  }
+ 
+  .carousel-indicators {
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .carousel-indicators li {
+    display: inline-block;
+    width:  10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid @carousel-indicator-border-color;
+    border-radius: 10px;
+    cursor: pointer;
 
+    // IE8-9 hack for event handling
+    //
+    // Internet Explorer 8-9 does not support clicks on elements without a set
+    // `background-color`. We cannot use `filter` since that's not viewed as a
+    // background color by the browser. Thus, a hack is needed.
+    //
+    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
+    // set alpha transparency for the best results possible.
+    background-color: #000 \9; // IE8
+    background-color: rgba(0,0,0,0); // IE9
+  }
+  .carousel-inner {margin-bottom: 20px;}
+  .carousel-indicators {
+    display: block;
+    position: relative;
+    left: 0%;
+    margin-left: 0;
+    width:100%; 
+    top: 0%; 
+  } 
+  .carousel-indicators li {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    border-radius: 0px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .carousel-indicators .active {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    border-radius: 0px;
+    margin: 0;
+  }
+
+}
 
 
 

@@ -6310,6 +6310,65 @@ label {
   text-align: left;
   color: #98d2a9;
 }
+/* PRODUCT PAGE 
+-------------------------------------------------- */
+#product #nav-row {
+  margin-bottom: 10px;
+}
+#product #nav-row a:hover {
+  text-decoration: none;
+}
+#product .carousel-indicators {
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+#product .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+#product .carousel-inner {
+  margin-bottom: 20px;
+}
+#product .carousel-indicators {
+  display: block;
+  position: relative;
+  left: 0%;
+  margin-left: 0;
+  width: 100%;
+  top: 0%;
+}
+#product .carousel-indicators li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  border-radius: 0px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+#product .carousel-indicators .active {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  border-radius: 0px;
+  margin: 0;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
