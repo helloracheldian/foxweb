@@ -6189,6 +6189,13 @@ h1 {
 h2 {
   text-transform: uppercase;
 }
+h1 {
+  white-space: nowrap;
+  font-size: 3vw;
+}
+h1 span {
+  font-size: 3vw;
+}
 /* Fox styles
 -------------------------------------------------- */
 section {
@@ -6439,6 +6446,13 @@ label {
     text-align: center;
     font-weight: 400;
   }
+  h1 {
+    white-space: nowrap;
+    font-size: 6vw;
+  }
+  h1 span {
+    font-size: 6vw;
+  }
   #footer .footer-social {
     width: auto;
     text-align: left;
@@ -6474,6 +6488,13 @@ label {
   .navbar-fixed-top .navbar-brand img {
     width: 250px;
     height: 96px;
+  }
+  h1 {
+    white-space: nowrap;
+    font-size: 3vw;
+  }
+  h1 span {
+    font-size: 3vw;
   }
 }
 /* Medium Devices, Desktops */
