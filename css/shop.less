@@ -1,5 +1,11 @@
 #thumbnails-grid {
-    .thumbnail {
+    .filter {
+        list-style:none;
+        text-align:center;
+        width: 100%;
+        li { display:inline-block;}
+    }
+    .thumbnails {
         background-color: #fff;
         border: 0;
         border-radius: 0;
@@ -9,8 +15,6 @@
         padding: 4px;*/
         transition: all 0.2s ease-in-out 0s;
     }
-    .filter {text-align: center;}
-    .filter li {text-align: center;}
     .thumbnails:before, .thumbnails:after {
         content: "";
         display: table;
@@ -33,7 +37,7 @@
     .thumbnails > li {
         float: left;
         margin-bottom: 20px;
-    /*    margin-left: 20px;*/
+
     }
     [class*="col-"] {
 /*        float: left;
