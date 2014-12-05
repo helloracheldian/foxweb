@@ -6376,6 +6376,9 @@ label {
   border-radius: 0px;
   margin: 0;
 }
+#product #related-products {
+  margin-top: 100px;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/

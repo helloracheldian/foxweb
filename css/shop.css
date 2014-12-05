@@ -1,4 +1,12 @@
-#thumbnails-grid .thumbnail {
+#thumbnails-grid .filter {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+#thumbnails-grid .filter li {
+  display: inline-block;
+}
+#thumbnails-grid .thumbnails {
   background-color: #fff;
   border: 0;
   border-radius: 0;
