@@ -1,0 +1,50 @@
+#thumbnails-grid .thumbnail {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  line-height: 1.42857;
+  /*margin-bottom: 22px;
+        padding: 4px;*/
+  transition: all 0.2s ease-in-out 0s;
+}
+#thumbnails-grid .filter {
+  text-align: center;
+}
+#thumbnails-grid .filter li {
+  text-align: center;
+}
+#thumbnails-grid .thumbnails:before,
+#thumbnails-grid .thumbnails:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+#thumbnails-grid .thumbnails:after {
+  clear: both;
+}
+#thumbnails-grid .thumbnails:before,
+#thumbnails-grid .thumbnails:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+#thumbnails-grid .thumbnails {
+  list-style: outside none none;
+  /*margin-left: -35px;*/
+  padding-left: 0;
+}
+#thumbnails-grid .thumbnails > li {
+  float: left;
+  margin-bottom: 20px;
+  /*    margin-left: 20px;*/
+}
+#thumbnails-grid [class*="col-"] {
+  /*        float: left;
+        margin-left: 20px;
+        min-height: 1px;*/
+  /*        width: 220px;*/
+}
+#thumbnails-grid li {
+  line-height: 20px;
+}
