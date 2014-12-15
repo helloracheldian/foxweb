@@ -24,6 +24,9 @@
   <!-- <link href="css/shopstyles.css" rel="stylesheet"> -->
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
+    <!-- Selz Modal styling -->
+  <link href="../css/jquery.selz.css" rel="stylesheet">
+
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
   <!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
@@ -71,101 +74,13 @@
   </nav>
 
   <div class="container">
-    <section id="products">
+    <section id="products" style="margin-bottom:0;">
       <div class="row">
         <div class="col-md-12">
-          <h1><span>Shop</span><small>Coming Soon!</small></h1>
+          <h1><span>Shop</span><!-- <small>Coming Soon!</small> --></h1>
         </div> 
       </div>
-
-      <div class="row">
-        <div class="col-sm-4 col-xs-6">
-          <a href="products/leather_bow.html">
-            <img src="images/400/bow_black.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="products/product-template.html">
-            <img src="images/400/bow_white.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="products/product-template.html">
-            <img src="images/400/bow_purple.png" alt="">
-          </a>
-        </div>
-      <!--
-      <div class="row">
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/bow_black.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/bow_white.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/bow_purple.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-sm-3  col-xs-6">
-          <a href="products/leather-bunting-necklace.html">
-            <img src="images/400/bunting_blackmirrorblack.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3  col-xs-6">
-          <a href="products/leather-bunting-necklace.html">
-            <img src="images/400/bunting_pinkredwhite.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3  col-xs-6">
-          <a href="products/leather-bunting-necklace.html">
-            <img src="images/400/bunting_whitepurpleyellow.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3  col-xs-6">
-          <a href="products/leather-bunting-necklace.html">
-            <img src="images/400/bunting_navymintgold.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-sm-6  col-xs-6">
-          <a href="product-template.html">
-            <img src="images/600/oversizedchev_purplewhiteyellow.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-6  col-xs-6">
-          <a href="product-template.html">
-            <img src="images/600/oversizedchev_goldmintnavy.png" alt="">
-          </a>
-        </div>
-
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/leaves_purplewhitegold.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/leaves_tealnavybrown.png" alt="">
-          </a>
-        </div>
-        <div class="col-sm-4 col-xs-6">
-          <a href="product-template.html">
-            <img src="images/400/leaves_goldpurplenavy.png" alt="">
-          </a>
-        </div>
-
--->
-        
-      </div>
-
     </section>
-
   </div> <!-- /.container -->
 
 
@@ -176,88 +91,321 @@
 <section id="thumbnails-grid">
   <div class="container">
     <div class="row">
-      <ul class="filter">
+      <ul class="filter" style="padding:0;">
         <li data-value="all"><a class="btn btn-primary" href="#">All</a></li>
-        <li data-value="neck"><a class="btn btn-primary" href="#">Necklaces</a></li>
-        <li data-value="cat"><a class="btn btn-primary" href="#">Cat</a></li>
-        <li data-value="bird"><a class="btn btn-primary" href="#">Birds</a></li>
+        <li data-value="bunting"><a class="btn btn-primary" href="#">Bunting</a></li>
+        <li data-value="chevron"><a class="btn btn-primary" href="#">Chevrons</a></li>
+        <li data-value="bow"><a class="btn btn-primary" href="#">Bows</a></li>
+        <li data-value="leaf"><a class="btn btn-primary" href="#">Leaves</a></li>
       </ul>
       <ul class="thumbnails">
-        <li data-type="neck" data-id="id-1" class="col-sm-4 col-xs-6">
-          <a href="#" id="neck1">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Necklace" alt="">
+
+<!-- ============== BUNTING =============== -->
+
+        <li data-type="bunting" data-id="id-1" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_blackmirrorblack.png">
           </a>
         </li>
-        <li data-type="cat" data-id="id-2" class="col-sm-4 col-xs-6">
-          <a href="#" id="cat1">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Cat" alt="">
+        <li data-type="bunting" data-id="id-2" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_blackpurplegold.png">
           </a>
         </li>
-        <li data-type="bird" data-id="id-3" class="col-sm-4 col-xs-6">
-          <a href="#" id="bird1">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Bird" alt="">
+        <li data-type="bunting" data-id="id-3" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_blueombre.png">
           </a>
         </li>
-        <li data-type="neck" data-id="id-4" class="col-sm-4 col-xs-6">
-          <a href="#" id="neck2">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Necklace" alt="">
+        <li data-type="bunting" data-id="id-4" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_metbluemintgold.png">
           </a>
         </li>
-        <li data-type="cat" data-id="id-5" class="col-sm-4 col-xs-6">
-          <a href="#" id="cat2">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Cat" alt="">
+        <li data-type="bunting" data-id="id-5" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_navymintgold.png">
           </a>
         </li>
-        <li data-type="bird" data-id="id-6" class="col-sm-4 col-xs-6">
-          <a href="#" id="bird2">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Bird" alt="">
-        </a>
-        </li>
-        <li data-type="neck" data-id="id-7" class="col-sm-4 col-xs-6">
-          <a href="#" id="neck3">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Necklace" alt="">
+        <li data-type="bunting" data-id="id-6" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_pinkredwhite.png">
           </a>
         </li>
-        <li data-type="cat" data-id="id-8" class="col-sm-4 col-xs-6">
-          <a href="#" id="cat3">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Cat" alt="">
+        <li data-type="bunting" data-id="id-7" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_purplegoldpurple.png">
           </a>
         </li>
-        <li data-type="bird" data-id="id-9" class="col-sm-4 col-xs-6">
-          <a href="#" id="bird3">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Bird" alt="">
+        <li data-type="bunting" data-id="id-8" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="images/400/bunting_whitepurpleyellow.png">
           </a>
         </li>
-        <li data-type="neck" data-id="id-10" class="col-sm-4 col-xs-6">
-          <a href="#" id="neck4">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Necklace" alt="">
+        <!-- <li data-type="bunting" data-id="id-9" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="http://placehold.it/420x420&text=Bunting+9">
+          </a>
+        </li> -->
+        <!-- <li data-type="bunting" data-id="id-10" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="http://placehold.it/420x420&text=Bunting+10">
+          </a>
+        </li> -->
+        <!-- <li data-type="bunting" data-id="id-11" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdWIgH" id="bunting">
+            <img class="img-responsive" src="http://placehold.it/420x420&text=Bunting+11">
+          </a>
+        </li> -->
+
+
+
+
+
+<!-- ============== SMALL CHEVRONS =============== -->
+
+        <li data-type="chevron" data-id="id-12" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_lilacmintwhite.png">
           </a>
         </li>
-        <li data-type="cat" data-id="id-11" class="col-sm-4 col-xs-6">
-          <a href="#" id="cat4">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Cat" alt="">
+        <li data-type="chevron" data-id="id-13" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_goldcoralnavy.png">
           </a>
         </li>
-        <li data-type="bird" data-id="id-12" class="col-sm-4 col-xs-6">
-          <a href="#" id="bird4">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Bird" alt="">
+        <li data-type="chevron" data-id="id-14" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_goldblackgreen.png">
           </a>
         </li>
-        <li data-type="neck" data-id="id-13" class="col-sm-4 col-xs-6">
-          <a href="#" id="neck5">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Necklace" alt="">
+        <li data-type="chevron" data-id="id-15" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_blacktealsilver.png">
           </a>
         </li>
-        <li data-type="cat" data-id="id-14" class="col-sm-4 col-xs-6">
-          <a href="#" id="cat5">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Cat" alt="">
+        <li data-type="chevron" data-id="id-16" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_goldpurplenavy.png">
           </a>
         </li>
-        <li data-type="bird" data-id="id-15" class="col-sm-4 col-xs-6">
-          <a href="#" id="bird5">
-            <img class="img-responsive" src="http://placehold.it/420x420&text=Bird" alt="">
+        <li data-type="chevron" data-id="id-17" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_mintpurplenavy.png">
           </a>
         </li>
+        <li data-type="chevron" data-id="id-18" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_blackgoldblack.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-19" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_blacksilvergold.png">
+          </a>
+        </li>
+        <!-- <li data-type="chevron" data-id="id-20" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_bluenavygreen.png">
+          </a>
+        </li> -->
+        <!-- <li data-type="chevron" data-id="id-21" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_goldbluenavy.png">
+          </a>
+        </li> -->
+        <!-- <li data-type="chevron" data-id="id-22" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_greenlilacnavy.png">
+          </a>
+        </li> -->
+        <!-- <li data-type="chevron" data-id="id-23" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_greynavyred.png">
+          </a>
+        </li> -->
+        <!-- <li data-type="chevron" data-id="id-24" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUYE0" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_greyrednavy.png">
+          </a>
+        </li> -->
+
+
+
+
+
+
+
+
+<!-- ============== LEAVES =============== -->
+
+        <li data-type="leaf" data-id="id-28" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdW3Mm" id="leaf">
+            <img class="img-responsive" src="images/400/leaves_blackgoldblack.png">
+          </a>
+        </li>
+        <li data-type="leaf" data-id="id-29" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdW3Mm" id="leaf">
+            <img class="img-responsive" src="images/400/leaves_goldcoralblack.png">
+          </a>
+        </li>
+        <li data-type="leaf" data-id="id-30" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdW3Mm" id="leaf">
+            <img class="img-responsive" src="images/400/leaves_goldeggplantnavy.png">
+          </a>
+        </li>
+        <li data-type="leaf" data-id="id-31" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdW3Mm" id="leaf">
+            <img class="img-responsive" src="images/400/leaves_eggplantwhitegold.png">
+          </a>
+        </li>
+        <li data-type="leaf" data-id="id-32" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdW3Mm" id="leaf">
+            <img class="img-responsive" src="images/400/leaves_tealnavybrown.png">
+          </a>
+        </li>
+
+<!-- ============== OVERSIZE BOWS =============== -->
+
+        <li data-type="bow" data-id="id-41" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_black.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-42" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_red.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-43" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_rededge.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-44" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_grey.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-45" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_greyedge.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-46" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_babyblue.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-47" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_tealedge.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-48" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdUluo" id="bow">
+            <img class="img-responsive" src="images/400/bow_oversize_navy.png">
+          </a>
+        </li>
+
+
+<!-- ============== OVERSIZE CHEVRONS =============== -->
+
+        <li data-type="chevron" data-id="id-20" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_whiteblackwhite.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-21" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_purplenavywhite.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-22" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_blackwhitesilver.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-23" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_purplegoldblack.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-24" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_blackgoldblack.png">
+          </a>
+        </li>
+        <!--  <li data-type="chevron" data-id="id-25" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_purplewhiteyellow.png">
+          </a>
+        </li> -->
+        <li data-type="chevron" data-id="id-26" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_goldmintnavy.png">
+          </a>
+        </li>
+        <li data-type="chevron" data-id="id-27" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdVJ07" id="chevron">
+            <img class="img-responsive" src="images/400/chevron_oversize_blackcoralgold.png">
+          </a>
+        </li>
+
+
+
+
+<!-- ============== 24" BOWS =============== -->
+
+        <li data-type="bow" data-id="id-33" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_babyblueedge.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-34" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_black.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-35" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_grey.png">
+          </a>
+        </li>
+        <li data-type="bow" data-id="id-36" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_metblue.png">
+          </a>
+        </li>
+        <!-- <li data-type="bow" data-id="id-37" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_pink.png">
+          </a>
+        </li> -->
+        <li data-type="bow" data-id="id-38" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_white.png">
+          </a>
+        </li>
+
+        <!-- <li data-type="bow" data-id="id-39" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_navy.png">
+          </a>
+        </li> -->
+        <!-- <li data-type="bow" data-id="id-40" class="col-sm-4 col-xs-6">
+          <a href="http://selz.co/1zdTBFD" id="bow">
+            <img class="img-responsive" src="images/400/bow_24_purple.png">
+          </a>
+        </li> -->
+
+
+
+
+
+
+
+
       </ul>
     </div>
   </div>
@@ -303,6 +451,7 @@
 
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src="../js/jquery.selz.min.js"></script> <!-- For Selz Modals -->
 <script src="js/bootstrap.min.js"></script>
 <script type='text/javascript' src="js/bootbox.min.js"></script>
 <script type="text/javascript" src="js/jquery.quicksand.js"></script>
@@ -381,6 +530,16 @@
     jQuery(document).ready(function() { jQuery("#footer-year").html(new Date().getFullYear()) });
   </script>
 
+  <!-- Script to customize Selz modal button color -->
+  <script>
+    $(function() {
+      $.selz({
+          buttonBg: "#91D2AD",
+          buttonText: "#fff",
+          prefetch: true,
+      });
+  });
+  </script>
 
 </body>
 </html>
