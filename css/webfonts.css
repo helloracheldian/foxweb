@@ -1,0 +1,16 @@
+/* Web Fonts */
+
+
+
+@font-face {
+    font-family: 'harmanscript';
+    src: url('../fonts/harman-script-webfont.eot');
+    src: url('../fonts/harman-script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/harman-script-webfont.woff2') format('woff2'),
+         url('../fonts/harman-script-webfont.woff') format('woff'),
+         url('../fonts/harman-script-webfont.ttf') format('truetype'),
+         url('../fonts/harman-script-webfont.svg#harmanscript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
